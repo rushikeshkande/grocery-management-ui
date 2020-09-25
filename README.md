@@ -1,68 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TypeScript and React Widget Components using Webpack
 
-## Available Scripts
 
-In the project directory, you can run:
+Simple and optimized React boilerplate. It includes: 
 
-### `npm start`
+- [x] React v16
+- [x] TypeScript v3 and TSX support
+- [x] React Router v5
+- [x] Latest Webpack (v.4.16.5) and Webpack Dev Server (v.3.1.5)
+- [x] Hot Module Replacement using [webpack-hmr](https://webpack.js.org/concepts/hot-module-replacement/)
+- [x] SASS support
+- [x] Production Config
+- [x] Custom TypeScript config
+- [x] TS Linting
+- [x] Redux (v4.0.5) API integration
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Starting the dev server
 
-### `npm test`
+Make sure you have **Node.js** installed.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Run `npm install`
+2. Start the dev server using `npm start`
+3. Open [http://localhost:3000](http://localhost:3000)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Available Commands
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- `npm start` - start the dev server
+- `npm clean` - delete the dist folder
+- `npm run build` - create a production ready build in `dist` folder
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Breaking down the Commands
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `npm start`
+    - Script: `"webpack-dev-server --mode development --progress --colors --open --hot --port 3000"`
+    - Script breakdown:
+        - `webpack-dev-server`: Runs webpack.config.js, creates the build and host the files on webpack development server.
+        - `--mode development`: Sets the webpack build mode to development.
+        - `--progress --colors`: Shows the progress of the build on the console with different colors for different assets.
+        - `--open`: Opens the default system browser.
+        - `--hot`: Activates the hot reload functionality where the browser itself reloads the component whenever the developer make any changes in the corresponding code.
+        - `--port 3000`: Targets the dev server and serve the distributable files on port 3000.
+        - Please note that `npm run clean` runs as before `npm start` which deletes the pre-existing dist folder from the project file system. 
+    
+- `npm run build`
+    - Script: `"npm run clean && webpack --mode production --progress --colors"`
+    - Script breakdown:
+        - `npm run clean`: Deletes the pre-existing dist folder from the project file system. 
+        - `webpack`: Runs webpack.config.js and creates the build.
+        - `--mode production`: Sets the webpack build mode to production.
+        - `--progress --colors`: Shows the progress of the build with different colors for different assets on the console.
+        
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Plugins and Optimizations:**
+    - The `CommonsChunkPlugin` was removed in webpack 4 and has been replaced with a set of defaults and API called `optimization.splitChunks` and `optimization.runtimeChunk`. This means you now get to have shared chunks automatically generated for you.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Other updates:**
+    - Improve stats output alignment.
+    - Improve stats text output when all exports are used.
+    - Add `prefetched/preloaded` chunks and assets to stats text output.
+    - `UglifyJs` now caches and parallizes by default.
+    - Performance improvement for `RemoveParentModulesPlugin`.
+    - Script tags are no longer `text/javascript` and async as this are the default values (saves a few bytes).
+    - Persistent Caching.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## TO DOS
+    - **ISSUE:** SCSS imports are not working in production environment with `import` statements. Currently using `require` for the same. This is happening only at the components level, while the base entry levels are importing as expected.

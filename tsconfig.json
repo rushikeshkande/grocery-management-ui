@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "module": "es6",
+      "target": "es2015",
+      "jsx": "react",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "moduleResolution": "node",
+      "lib": ["es6", "dom"],
+      "baseUrl": "",
+      "typeRoots": [
+        "node_modules/@types"
+      ],
+      "paths": {
+        "@actions/*": ["src/actions/*"],
+        "@assets/*": ["src/assets/*"],
+        "@components/*": ["src/components/*"],
+        "@basecomponents/*": ["src/components/*"],
+        "@constants/*": ["src/constants/*"],
+        "@middleware/*": ["src/middleware/*"],
+        "@models/*": ["src/models/*"],
+        "@reducers/*": ["src/reducers/*"],
+        "@services/*": ["src/services/*"],
+        "@promises/*": ["src/services/promises/*"],
+        "@store/*": ["src/store/*"],
+        "@styles/*": ["src/styles/*"],
+        "@views/*": ["src/views/*"],
+        "@utils/*": ["src/utils/*"]
+      }
+    },
+    "exclude": [
+      "dist",
+      "node_modules"
+    ]
+}
+  
