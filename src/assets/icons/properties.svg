@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>06B47A93-76BB-45D1-B5BD-DD9AECA27FC8</title>
+    <g id="Component" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-255.000000, -343.000000)" fill="#FFFFFF">
+            <g id="icon/property/24px/default" transform="translate(255.000000, 343.000000)">
+                <g id="sidebar-copy" transform="translate(2.000000, 2.000000)">
+                    <path d="M16,0 C18.209139,-4.05812251e-16 20,1.790861 20,4 L20,16 C20,18.209139 18.209139,20 16,20 L4,20 C1.790861,20 2.705415e-16,18.209139 0,16 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L16,0 Z M6,2 L4,2 C2.9456382,2 2.08183488,2.81587779 2.00548574,3.85073766 L2,4 L2,16 C2,17.0543618 2.81587779,17.9181651 3.85073766,17.9945143 L4,18 L6,18 L6,2 Z M16,2 L8,2 L8,18 L16,18 C17.1045695,18 18,17.1045695 18,16 L18,16 L18,4 C18,2.8954305 17.1045695,2 16,2 L16,2 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

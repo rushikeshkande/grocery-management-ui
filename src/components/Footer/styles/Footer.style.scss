@@ -1,0 +1,20 @@
+.project-footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  border-top: 2px solid #e1e6ed;
+  height: 4em;
+  padding: 0 1em;
+  margin-top: 1em;
+  .footer-section {
+      display: flex;
+      text-transform: uppercase;
+      .footer-name {
+        margin-bottom: 0;
+        font-weight: bold;
+        color:white;
+        font-size: 12px;
+      }
+  }
+}

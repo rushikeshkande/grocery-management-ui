@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="26px" viewBox="0 0 24 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1511D192-276C-452A-8F91-DD1D837F1A49</title>
+    <g id="Component" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-703.000000, -470.000000)">
+            <g id="icon/edit24px/default" transform="translate(703.000000, 471.000000)">
+                <g id="create-24px">
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+                <g id="Group" transform="translate(11.763883, 11.925106) rotate(-345.000000) translate(-11.763883, -11.925106) translate(5.263883, 1.925106)" stroke="#505F79" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M7.94087893,1.03646321 C9.04544843,1.03646321 9.94087893,1.93189371 9.94087893,3.03646321 L9.94087893,13.0364632 C9.94087893,13.588748 9.49316368,14.0364632 8.94087893,14.0364632 L6.94087893,14.0364632 C6.38859418,14.0364632 5.94087893,13.588748 5.94087893,13.0364632 L5.94087893,3.03646321 C5.94087893,1.93189371 6.83630943,1.03646321 7.94087893,1.03646321 Z" id="Rectangle" transform="translate(7.940879, 7.536463) rotate(-330.000000) translate(-7.940879, -7.536463) "></path>
+                    <path d="M0.725185655,15.9105647 L3.72518565,15.9105647 L2.10826126,18.9105647 L2.10826126,18.9105647 L0.725185655,15.9105647 L0.725185655,15.9105647 Z" id="Rectangle-Copy" transform="translate(2.225186, 17.410565) rotate(-330.000000) translate(-2.225186, -17.410565) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

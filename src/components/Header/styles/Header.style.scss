@@ -1,0 +1,30 @@
+.project-header {
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 5em);
+  z-index: 1;
+  border-bottom: 1px solid #e1e6ed;
+  height: 4em;
+  padding: 0 1em;
+  .d-flex {
+    display: flex;
+  }
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .brand-section {
+    display: flex;
+    text-transform: uppercase;
+    .brand {
+      margin-bottom: 0;
+      font-weight: bold;
+      color: #091e42;
+      font-size: 16px;
+    }
+  }
+}

@@ -14,7 +14,7 @@ module.exports = {
         historyApiFallback: true
     },
     resolve: {
-        extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
+        extensions: [".js", ".jsx", ".json", ".ts", ".tsx",".scss"],
         mainFields: ["module", "browser", "main"],
         alias: {
             "@actions": resolve(__dirname, "src/actions"),
@@ -40,8 +40,8 @@ module.exports = {
                 use: 'babel-loader',
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader','sass-loader'],
             },
             {
                 test: /\.(png|j?g|svg|gif)?$/,

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F1EA8586-0BFD-48CE-BDF1-7E025FE7799E</title>
+    <g id="Component" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-311.000000, -407.000000)">
+            <g id="Group-2" transform="translate(311.000000, 407.000000)">
+                <rect id="Rectangle-Copy" fill="#FFC9C9" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                <rect id="Rectangle" stroke="#DD0000" fill="#CE0000" opacity="0" x="2.5" y="2.5" width="19" height="19"></rect>
+                <g id="book-open" transform="translate(3.000000, 4.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M0,0 L5.4,0 C7.3882251,0 9,1.59187645 9,3.55555556 L9,16 C9,14.5272407 7.79116882,13.3333333 6.3,13.3333333 L0,13.3333333 L0,0 Z" id="Path"></path>
+                    <path d="M18,0 L12.6,0 C10.6117749,0 9,1.59187645 9,3.55555556 L9,16 C9,14.5272407 10.2088312,13.3333333 11.7,13.3333333 L18,13.3333333 L18,0 Z" id="Path" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
