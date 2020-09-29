@@ -1,0 +1,147 @@
+@import "@styles/_variables.scss";
+
+.login-form {
+  padding: 5em;
+  .login-form-wrapper {
+    background-color: $white;
+    border-radius: 5px;
+    padding: 0px;
+    .form-section {
+      .sign-in-header {
+        margin: 1em;
+        text-transform: uppercase;
+        font-size: 35px;
+        text-align: center;
+        .sign {
+          color: $black;
+        }
+        .in {
+          color: $active-blue;
+        }
+      }
+      form {
+        margin: 2em;
+        .login-input-wrapper {
+          display: flex;
+          justify-content: center;
+          .login-input {
+            display: block;
+            margin: 1em;
+            width: 400px;
+            height: 50px;
+            font-weight: 600;
+            padding: 20px;
+            border: 1px solid $light-grey;
+            ::placeholder {
+              color: $light-grey;
+            }
+          }
+        }
+        .forgot-password-checkbox-wrapper {
+          display: flex;
+          justify-content: space-between;
+          margin: 0em 4em;
+          padding: 20px;
+          .stay-signin-wrapper {
+            display: flex;
+            .stay-signin-box {
+              width: 25px;
+              height: 25px;
+            }
+            .stay-signin {
+              margin-left: 1em;
+              font-weight: 600;
+            }
+          }
+          a {
+            color: $active-blue;
+            font-weight: 600;
+          }
+        }
+        .submit-btn {
+          width: 400px;
+          height: 45px;
+          background-color: $active-blue;
+          margin: 1em;
+          border-radius: 5px;
+          border: none;
+          color: $white;
+        }
+      }
+      .sign-in-options-title {
+        display: flex;
+        margin: 1em 8em;
+        align-items: center;
+        .line {
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #000;
+          padding: 0;
+          width: 24%;
+        }
+        .options-title {
+          margin: 0px 20px;
+          font-weight: 600;
+          display: inline;
+          font-size: 22px;
+        }
+      }
+      .social-btn-group {
+        margin: 0em 6em;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        .google-btn {
+          width: 45%;
+          background-color: #dd4b39 !important;
+          border: none;
+          color: white;
+          text-transform: uppercase;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+            0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          cursor: pointer;
+          padding: 0.84rem 2.14rem;
+          font-size: 0.81rem;
+        }
+        .facebook-btn {
+          width: 45%;
+          background-color: #4264aa !important;
+          border: none;
+          color: white;
+          text-transform: uppercase;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+            0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          cursor: pointer;
+          padding: 0.84rem 2.14rem;
+          font-size: 0.81rem;
+        }
+      }
+      .signup-link-wrapper {
+        padding: 0px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin: 2em 5em;
+    align-items: center;
+    .p {
+        margin: 0px;
+    }
+        .signup-link {
+            color: $active-blue;
+            margin-left: 0.5em;
+        }
+      }
+    }
+    .image-section {
+      width: 100%;
+      padding: 0px;
+      .login-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

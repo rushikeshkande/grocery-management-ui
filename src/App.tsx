@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router";
 import { HashRouter as Router } from "react-router-dom";
 import { store } from "./store/index";
 import { Projects } from "@views/Home/Home";
+import { Login } from "@views/Login/Login";
 
 export class App extends React.PureComponent {
   render() {
@@ -13,6 +14,7 @@ export class App extends React.PureComponent {
           <section id="page-body">
             <Switch>
               <Route exact path="/" component={Projects} />
+              <Route path="/login" component={Login} />
             </Switch>
           </section>
         </Router>

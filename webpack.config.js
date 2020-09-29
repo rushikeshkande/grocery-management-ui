@@ -4,7 +4,10 @@ const { resolve } = require('path');
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    entry: './index.tsx',
+    entry: [
+        './index.tsx',
+        './styles/base.scss'
+    ],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
@@ -63,6 +66,10 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{ loader: 'url-loader?limit=15000&name=fonts/[hash].[ext]' }]
             }
         ]
     },
