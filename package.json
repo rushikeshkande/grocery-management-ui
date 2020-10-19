@@ -48,16 +48,15 @@
     "moment": "^2.26.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-image-crop": "^8.6.6",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.3",
     "redux": "^4.0.5"
   },
   "scripts": {
     "webpack-dev-server": "webpack-dev-server",
-    "dev": "webpack-dev-server --mode=development",
-    "prod": "webpack --mode=production",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

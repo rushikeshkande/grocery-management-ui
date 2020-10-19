@@ -1,0 +1,76 @@
+@import "@styles/_variables.scss";
+
+.signup-header {
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  .black-name {
+    color: $black;
+  }
+  .blue-name {
+    color: $active-blue;
+  }
+}
+.user-image-section {
+  border: 1px dashed #e1e3e8;
+  border-radius: 12px;
+  margin: 1em 3em;
+  padding: 1em;
+  background-color: #fbfcff;
+  .user-image {
+    margin-right: 1em;
+    border-radius: 12px;
+    background-color: #e3eaf7;
+  }
+}
+.signup-form {
+  padding: 1em;
+  .form-grp {
+    display: block;
+    font-family: AlegreyaSans-Regular;
+    font-size: 1em;
+    margin-bottom: 2rem;
+    label {
+      color: #091e42;
+    }
+    input {
+      display: block;
+      height: 50px;
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #e1e3e8;
+      border-radius: 12px;
+    }
+  }
+  .button-grp {
+    text-align: right;
+    border-top: 1px solid #e1e3e8;
+    padding-top: 2em;
+    margin: 0 1em;
+    .cancel-btn {
+      white-space: nowrap;
+      width: 15%;
+      margin-right: 1em;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #f7f7f8;
+      border: 1px solid #c1c7d0;
+      color: #505f79;
+      border-radius: 20px;
+      padding: 0.5em 24px;
+      cursor: pointer;
+    }
+    .save-btn {
+      color: #fff;
+      background-color: #0869fe;
+      border: none;
+      width: 15%;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 0.5em 24px;
+      cursor: pointer;
+    }
+  }
+}

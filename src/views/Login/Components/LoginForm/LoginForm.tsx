@@ -22,18 +22,21 @@ export class LoginForm extends React.PureComponent<any, ILoginFormState> {
                 <input
                   placeholder="Username or Email"
                   className="login-input"
+                  type="text"
+                  required
                 ></input>
               </div>
               <div className="login-input-wrapper">
-                <input placeholder="Password" className="login-input"></input>
+                <input
+                  placeholder="Password"
+                  className="login-input"
+                  type="password"
+                  required
+                ></input>
               </div>
               <div className="forgot-password-checkbox-wrapper">
-                <div className="stay-signin-wrapper">
-                  <input type="checkbox" className="stay-signin-box"></input>
-                  <p className="stay-signin">Stay signed in</p>
-                </div>
                 <div>
-                  <a href="">Forgot Password?</a>
+                  <a href="/forgot-password">Forgot Password?</a>
                 </div>
               </div>
               <div className="login-input-wrapper">
@@ -42,18 +45,13 @@ export class LoginForm extends React.PureComponent<any, ILoginFormState> {
                 </button>
               </div>
             </form>
-            <div className="sign-in-options-title">
-                <div className="line" />
-                <div className="options-title">Or Sign In with</div>
-                <div className="line" />
-            </div>
-            <div className="social-btn-group">
-                <button className="google-btn">google +</button>
-                <button className="facebook-btn">facebook</button>
-            </div>
             <div className="signup-link-wrapper">
-                <p>Not a member?</p>
-                <p><a href="" className="signup-link">Sign Up</a></p>
+              <p>Not a member?</p>
+              <p>
+                <a href="/signup" className="signup-link">
+                  Sign Up
+                </a>
+              </p>
             </div>
           </div>
           <div className="image-section col-4">
