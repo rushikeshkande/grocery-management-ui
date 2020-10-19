@@ -1,5 +1,7 @@
 import React, { PureComponent } from "react";
 import "./styles/Home.style.scss";
+import { DatePicker, Space, notification  } from 'antd';
+import 'antd/dist/antd.css';
 
 interface IProjectsProps {
   history: any;
@@ -28,6 +30,18 @@ export class Projects extends PureComponent<IProjectsProps, IProjectsState> {
 
   isSelected = () => {
     this.setState({ selected: !this.state.selected});
+  }
+
+  onChange = (date, dateString) => {
+    console.log(date, dateString);
+    notification.success({
+      message: 'Notification Title',
+      description:
+        'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+      onClick: () => {
+        console.log('Notification Clicked!');
+      },
+    });
   }
 
   render() {
@@ -115,6 +129,9 @@ export class Projects extends PureComponent<IProjectsProps, IProjectsState> {
                     <span>{"7% OFF"}</span>
                   </span>
                 <strong className="product-name">T-shirt</strong>
+                <Space direction="vertical">
+                <DatePicker onChange={this.onChange} />
+                </Space>
               </div>
             </div>
             <div className="col-3">
