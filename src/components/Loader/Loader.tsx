@@ -1,25 +1,20 @@
 import * as React from "react";
-import "./styles/Loader.style.scss";
 
 export interface ILoaderState {}
 export interface ILoaderProps {}
 
-export class Loader extends React.PureComponent<any, ILoaderState> {
-    state = {};
+export class LoaderComponent extends React.PureComponent<ILoaderProps, ILoaderState> {
+  state = {};
 
-    render() {
-        return (
-            <section className="global-loader-component">
-                <div className="sk-chase">
-                <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                </div>
-                <p className="loading-label">Fetching Projects</p>
-            </section>
-        )
-    }
+  render() {
+    return (
+      <div className="wrapper">
+    <div className="loader-container" >
+        <div className="loader">
+            <img src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" />
+        </div>
+    </div>
+</div>
+    );
+  }
 }

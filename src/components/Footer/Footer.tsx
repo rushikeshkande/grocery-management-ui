@@ -5,7 +5,7 @@ export interface IFooterProps {}
 export interface IFooterState {}
 
 
-class Footer extends React.PureComponent<any,IFooterState> {
+class FooterComponent extends React.PureComponent<any,IFooterState> {
     
     render() {
         return (
@@ -22,4 +22,4 @@ class Footer extends React.PureComponent<any,IFooterState> {
     }
 }
 
-export default Footer;
+export default FooterComponent;

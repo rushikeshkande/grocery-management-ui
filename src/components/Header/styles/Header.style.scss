@@ -1,31 +1,178 @@
 .project-header {
   font-family: AlegreyaSans-Regular;
-  background-color: skyblue;
+  background-color: #008ecc;
+  height: 72px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   position: fixed;
-  width: calc(100% - 5em);
-  z-index: 1;
+  z-index: 999;
   border-bottom: 1px solid #e1e6ed;
-  height: 4em;
   padding: 0 1em;
-  .d-flex {
-    display: flex;
-  }
-  .justify-content-between {
-    justify-content: space-between;
-  }
-  .align-items-center {
-    align-items: center;
-  }
   .brand-section {
     display: flex;
     text-transform: uppercase;
     .brand {
       margin-bottom: 0;
       font-weight: bold;
-      color: #091e42;
+      color: #ffffff;
       font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  .search-bar-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 40px;
+    width: 35em;
+    padding: 0 0.5em;
+    height: 40px;
+    align-items: center;
+    margin-left: 5em;
+    margin-right: 5em;
+    .input-group {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      width: 100%;
+      .global-search-input-bar {
+        background-color: transparent;
+        width: 100%;
+        position: relative;
+        padding: 0 16px;
+        font-size: 15px;
+        color: #000;
+        font-family: sans-serif;
+        border: 0;
+        border-radius: 5px 0 0 5px;
+        outline: 0;
+      }
+    }
+  }
+  .global-search-result {
+    width: 45em;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    overflow: auto;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    max-height: 60vh;
+    .list-group {
+      padding-left: 0px;
+      margin-bottom: 0px;
+      list-style-type: none;
+      .list-group-item {
+        font-size: 16px;
+        color: #000000;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        border: 1px solid #eee;
+        font-weight: bold;
+        &:hover {
+          background-color: #f8f8f8;
+        }
+        .list-group-item-image {
+          width: 60px;
+          height: 60px;
+        }
+        .list-group-item-name {
+          width: 70%;
+          margin-left: 2em;
+        }
+        .list-group-item-price {
+          margin-left: 1em;
+        }
+        .list-group-item-no-result {
+          font-size: 18px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  .profile-cart-section {
+    color: #ffffff;
+    .cart-container {
+      border-right: 1px solid #ffffff;
+      margin-right: 24px;
+      padding-right: 24px;
+      .cart-logo {
+        background: url("https://www.jiomart.com/assets/version16021777699/smartweb/images/icons/cart.svg")
+          no-repeat center center;
+        height: 30px;
+        padding: 0;
+        width: 30px;
+        background-size: 30px;
+        cursor: pointer;
+        .counter-number {
+          color: #fff;
+          padding: 0;
+          font-size: 14px;
+          display: block;
+          width: 18px;
+          height: 18px;
+          line-height: 18px;
+          background: #dd0608;
+          border-radius: 50%;
+          margin: 0 0 0 20px;
+          text-align: center;
+        }
+      }
+    }
+    .profile-section {
+      margin-bottom: 0em;
+      font-size: 16px;
+      cursor: pointer;
+      .profile-img {
+        border-radius: 35px;
+        background-color: #e2e2e2;
+        width: 32px;
+        height: 32px;
+        margin-right: 0.5em;
+      }
+    }
+  }
+  .profile-dropdown-section {
+    margin: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: #394253;
+    border-radius: 4px;
+    top: 72px !important;
+    width: 222px;
+    position: absolute;
+    right: 0%;
+    &:before {
+      content: " ";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #394253;
+      position: absolute;
+      top: -10px;
+      right: 20%;
+    }
+    .profile-dropdown {
+      list-style-type: none;
+    padding: 1em 1em 0em 1em;
+    margin-bottom: 0px;
+    font-size: 17px;
+      .profile-dropdown-item {
+        line-height: 24px;
+        color: #a2a9b4 !important;
+        height: 40px;
+        cursor: pointer;
+        &:hover {
+          color: #ffffff !important;
+        }
+        i {
+          margin-right: 1em;
+        }
+      }
     }
   }
 }
